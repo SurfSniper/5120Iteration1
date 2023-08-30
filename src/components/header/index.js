@@ -12,14 +12,27 @@ function Header() {
 
                         <ul className="nav navbar-nav navbar-right ul-right">
                             <li className="li-right"><a href="#home" className="page-scroll">Home</a></li>
-                            <li className="li-right"><a href="#services-section" className="page-scroll">Services</a></li>
-                            <li className="li-right"><a href="#works-section" className="page-scroll">Portfolio</a></li>
-                            <li className="li-right"><a href="#about-section" className="page-scroll">About</a></li>
-                            <li className="li-right"><a href="#contact-section" className="page-scroll">Contact</a></li>
+                            <li className="li-right"><a href="#education" className="page-scroll">Education</a></li>
+                            <li className="li-right"><a href="#shawn" className="page-scroll">Shawn</a></li>
+                            <li className="li-right"><a href="#search" className="page-scroll">search</a></li>
+                            <li className="li-right"><a href="#about" className="page-scroll">about us</a></li>
                         </ul>
                     </span>
                 </span>
             </nav>
+
+            <div className="intro-text">
+                <h1>Welcome to <strong>Recycle Nest</strong></h1>
+
+                <div className="focus">
+                    <p>We focus on garbage collection</p>
+                </div>
+
+                <div className="learn-more">
+                    <a href="#services-section" className="btn btn-default btn-lg page-scroll">LEARN MORE
+                    </a>
+                </div>
+            </div>
         </header>
 
     )

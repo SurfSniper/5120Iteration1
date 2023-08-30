@@ -12,27 +12,17 @@ function Home() {
 
     return (
 
-
         <div className="P-home">
             <Header />
 
-            <div className="intro-text">
-                <h1>Welcome to <strong>Recycle Nest</strong></h1>
-
-                <div className="focus">
-                    <p>We focus on garbage collection</p>
-                </div>
-
-                <div className="learn-more">
-                    <a href="#services-section" className="btn btn-default btn-lg page-scroll">LEARN MORE
-                    </a>
-                </div>
+            <div className="home-div">
 
                 <div className="ipt-con">
                     <Button onClick={() => {
                         goto('/login')
                     }}>组件外跳转</Button>
                 </div>
+                
 
                 <div className="ipt-con">
                     <Button type="primary" onClick={() => {

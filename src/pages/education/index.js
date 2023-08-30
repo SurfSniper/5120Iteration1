@@ -1,6 +1,6 @@
 import {useNavigate} from 'react-router-dom'
 import {Button} from 'antd'
-import './account.styl'
+import './education.styl'
 
 function Account() {
 
