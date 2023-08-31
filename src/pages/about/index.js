@@ -94,6 +94,13 @@ function About() {
                     </div>
                 </div>
             </div>
+            <div id="footer">
+                <div className="container">
+                    <div className="fnav">
+                        <p>Copyright &copy; 2023.Recycle Nest All rights reserved. By TA10.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
 

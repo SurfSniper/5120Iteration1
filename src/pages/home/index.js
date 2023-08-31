@@ -6,7 +6,10 @@ import './home.styl'
 import { goto } from '../../api'
 import React,{useState, useEffect} from "react";
 import {Input} from 'antd';
-
+import sta_logo from './sta_logo.jpg';
+import WasteLineChart from "./WasteLineChart/WasteLineChart";
+import { Tabs, Tab } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 
@@ -196,16 +199,27 @@ function Home() {
                                 </div>
                             </div>
                         </div>
+
+                        <div className="stast">
+                            <div className="left-column">
+                                <img src={sta_logo} className="img-responsive"/>
+                            </div>
+                            <div className="right-column">
+                                <p></p>
+                                <WasteLineChart />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
 
 
+
             <div id="footer">
                 <div className="container">
                     <div className="fnav">
-                        <p>Copyright &copy; 2023.Recycle Nest All rights reserved.</p>
+                        <p>Copyright &copy; 2023.Recycle Nest All rights reserved. By TA10.</p>
                     </div>
                 </div>
             </div>
