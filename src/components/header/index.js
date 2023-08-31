@@ -13,7 +13,7 @@ function Header() {
                         <ul className="nav navbar-nav navbar-right ul-right">
                             <li className="li-right"><a href="#home" className="page-scroll">Home</a></li>
                             <li className="li-right"><a href="#education" className="page-scroll">Education</a></li>
-                            <li className="li-right"><a href="#shawn" className="page-scroll">Shawn</a></li>
+                            <li className="li-right"><a href="#shawn" className="page-scroll">Statistics</a></li>
                             <li className="li-right"><a href="#search" className="page-scroll">search</a></li>
                             <li className="li-right"><a href="#about" className="page-scroll">about us</a></li>
                         </ul>

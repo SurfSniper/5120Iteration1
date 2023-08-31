@@ -1,15 +1,20 @@
-import React, {useState} from "react";
+import React, { useState, useEffect} from "react";
 import axios from "axios";
 import './search.styl'
 import Header from '../../components/header'
 import {Input} from 'antd';
 import {Button} from 'antd'
+import {useLocation} from 'react-router-dom'
 
 
 function SearchInput() {
-    const [searchValue, setSearchValue] = useState("");
+
+    let [searchValue, setSearchValue] = useState("");
+    const location = useLocation();
+    const queryParams = new URLSearchParams(location.search);
+    let param1 = queryParams.get('param1');
     //Initialize default data
-    const [list, setData] = useState([
+    let [list, setData] = useState([
         {
             source: {
                 id: "new-scientist",
@@ -60,23 +65,47 @@ function SearchInput() {
                 "System 002 being tested in 2021 in the Great Pacific Garbage Patch. (Photo: The Ocean Cleanup)\r\nPlastic in the ocean is a huge environmental problem that affects everyone. From the microplastics that… [+3183 chars]",
         },
     ]);
+   
+
     //The value returned by the input box change event is stored
     const handleInputChange = (e) => {
         setSearchValue(e.target.value);
     };
+
     // Events triggered by clicking the search button
     const handleSearch = () => {
-        axios
+        console.log(param1)
+       
+        if (param1!=="" & searchValue == ""){
+            axios
+            .get(
+                `https://newsapi.org/v2/everything?q=${param1}&apiKey=a19e03e3fe484881805f31ce994dbcd6&pageSize=10`
+            )
+            .then((res) => {
+                setData(res.data.articles);
+                // console.log(JSON.stringify(res.data.articles));
+                // console.log(JSON.stringify(res.data.articles.splice(0, 3)));
+            });
+
+            
+        }
+        else{
+            axios
             .get(
                 `https://newsapi.org/v2/everything?q=${searchValue}&apiKey=a19e03e3fe484881805f31ce994dbcd6&pageSize=10`
             )
             .then((res) => {
                 setData(res.data.articles);
-                console.log(JSON.stringify(res.data.articles.splice(0, 3)));
+                // console.log(JSON.stringify(res.data.articles));
+                // console.log(JSON.stringify(res.data.articles.splice(0, 3)));
             });
+        }
+
 
     };
-
+    useEffect(() => {
+        handleSearch();
+    }, []);
 
     return (<div className="P-home">
             <Header/>
@@ -103,7 +132,9 @@ function SearchInput() {
                             <h2>{i.title}</h2>
                             <span>{i.description}</span>
                         </div>
-                    </div>))} </div>
+                    </div>
+                    ))} 
+                </div>
 
             </div>
         </div>
