@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import axios from "axios";
 import './search.styl'
 import Header from '../../components/header'
+import {Input} from 'antd';
+import {Button} from 'antd'
+
 
 function SearchInput() {
     const [searchValue, setSearchValue] = useState("");
@@ -74,19 +77,18 @@ function SearchInput() {
 
     };
 
+
     return (<div className="P-home">
             <Header/>
             <div className="App">
-                <div className="search">
-                    <input
-                        className="input"
-                        type="text"
-                        value={searchValue}
-                        onChange={handleInputChange}
-                    />
-                    <button className="inputbtn" onClick={handleSearch}>
-                        search
-                    </button>
+                <div className="search text-center">
+                    <span>
+                    <Input className="input"
+                           type="text"
+                           value={searchValue}
+                           onChange={handleInputChange}/>
+                    <Button className="inputbtn" onClick={handleSearch} type="primary">search</Button>
+</span>
                     {/* Display of requested data */}
                     {list.map((i) => (<div
                         className="flex-w"

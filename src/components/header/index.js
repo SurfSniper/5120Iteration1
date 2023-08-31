@@ -29,7 +29,7 @@ function Header() {
                 </div>
 
                 <div className="learn-more">
-                    <a href="#services-section" className="btn btn-default btn-lg page-scroll">LEARN MORE
+                    <a className="btn btn-default btn-lg page-scroll">LEARN MORE
                     </a>
                 </div>
             </div>

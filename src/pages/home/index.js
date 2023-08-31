@@ -7,7 +7,7 @@ import React from "react";
 
 function Home() {
 
-    // 创建路由钩子
+    // Routing hook
     const navigate = useNavigate()
 
     return (
@@ -15,19 +15,11 @@ function Home() {
         <div className="P-home">
             <Header />
 
-            <div className="home-div">
-
-                <div className="ipt-con">
-                    <Button onClick={() => {
-                        goto('/login')
-                    }}>组件外跳转</Button>
-                </div>
-                
-
+            <div className="App">
                 <div className="ipt-con">
                     <Button type="primary" onClick={() => {
-                        navigate('/login')
-                    }}>返回登录</Button>
+                        navigate('/home')
+                    }}>This is the homepage</Button>
                 </div>
             </div>
 

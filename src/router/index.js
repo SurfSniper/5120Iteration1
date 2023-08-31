@@ -5,24 +5,31 @@ import Education from '../pages/education'
 import Search from '../pages/search'
 import Shawn from '../pages/shawn'
 
-// 全局路由
+// global routing
 export const globalRouters = createHashRouter([
-    // 对精确匹配"/login"，跳转Login页面
+    // Accurate matching "/about"
+    // Jump to "About Us" Page
     {
         path: '/about',
         element: <About />,
     },
-    // 精确匹配"/home"，跳转Home页面
+
+    // Accurate matching "/home"
+    // Jump to "Home" Page
     {
         path: '/home',
         element: <Home />,
     },
-    // 精确匹配"/account"，跳转Account页面
+
+    // Accurate matching "/education"
+    // Jump to "Education" Page
     {
         path: '/education',
         element: <Education />,
     },
 
+    // Accurate matching "/search"
+    // Jump to "Search" Page
     {
         path: '/search',
         element: <Search />,
@@ -33,14 +40,11 @@ export const globalRouters = createHashRouter([
         element: <Shawn />,
     },
     
-    // 如果URL没有"#路由"，跳转Home页面
+    // URL is empty
+    // Jump to "Home" Page
     {
         path: '/',
         element: <Home />,
     },
-    // // 未匹配，，跳转Login页面
-    // {
-    //     path: '*',
-    //     element: <Navigate to="/home" />,
-    // },
+
 ])
