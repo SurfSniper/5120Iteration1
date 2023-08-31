@@ -199,19 +199,21 @@ function Home() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div className="stast">
+                        <div className="left-column">
+                            <img src={sta_logo} className="img-responsive"/>
+                        </div>
+                        <div className="right-column">
+                            The line graph depicts a troubling trend in Australia's Total Yearly Waste Collections, showing a 3% increase to 76 million tons. This upward trajectory highlights the urgent need for more robust waste management strategies, despite a stable recycling rate.
 
-                        <div className="stast">
-                            <div className="left-column">
-                                <img src={sta_logo} className="img-responsive"/>
-                            </div>
-                            <div className="right-column">
-                                <p></p>
-                                <WasteLineChart />
-                            </div>
+                            <WasteLineChart />
                         </div>
                     </div>
                 </div>
             </div>
+
+
 
 
 

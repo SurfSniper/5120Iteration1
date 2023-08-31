@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f89d9c5-b7ec-41d9-a2ee-b7899008c890" name="Changes" comment="gengxinfan 6.46am">
-      <change afterPath="$PROJECT_DIR$/src/pages/home/sta_logo.jpg" afterDir="false" />
+    <list default="true" id="3f89d9c5-b7ec-41d9-a2ee-b7899008c890" name="Changes" comment="gengxinfan 7.44 footer update&#10;home page update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/home.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/shawn/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shawn/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +194,7 @@
       <workItem from="1693488853660" duration="4228000" />
       <workItem from="1693504778622" duration="6595000" />
       <workItem from="1693511511879" duration="1832000" />
-      <workItem from="1693513827837" duration="4111000" />
+      <workItem from="1693513827837" duration="5704000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -219,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693514851747</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="gengxinfan 7.44 footer update&#10;home page update">
+      <created>1693518270445</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693518270445</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +235,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <MESSAGE value="gengxinfan 6.46am" />
-    <option name="LAST_COMMIT_MESSAGE" value="gengxinfan 6.46am" />
+    <MESSAGE value="gengxinfan 7.44 footer update&#10;home page update" />
+    <option name="LAST_COMMIT_MESSAGE" value="gengxinfan 7.44 footer update&#10;home page update" />
   </component>
 </project>
